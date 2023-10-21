@@ -10,6 +10,6 @@ setup() {
 }
 
 @test "can run our script" {
-    run project.sh
-    assert_output hallo
+    run src/from_file_if_exists.sh
+    assert_output "A A"
 }
